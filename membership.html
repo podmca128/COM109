@@ -1,24 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-    <!--Jquery to highlight rows for membership plan-->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
-    <script>
-        $(document).ready(function() {
-            $("tr").hover(
-                function() {
-                    $(this).css("background-color", "yellow");
-                },
-                function() {
-                    $(this).css("background-color", "white");
-                }
-            );
-        });
-    </script>
-    <!--End of JQuery-->
-    
     <meta charset="UTF-8">
     <title>Membership</title>
 </head>
@@ -29,8 +11,8 @@
     <a href="index.html">
       <img src="Elevate_Gym_Logo.png" alt="Elevate Gym Logo" style="width: 150px; height: auto;">
     </a>
-  </div
-  >
+  </div>
+
     <h1>Membership Plans</h1>
     <nav>
         <a href="index.html">Home</a> |
@@ -42,148 +24,65 @@
 </header>
 
 <main>
-    <h2>Choose Your Plan</h2>
 
-    <!--Table to compare plans-->
-    <!--Might change table to a dropdown description, that will appear when user clicks on to the tier, of what benefits each membership plan has. Similar to pureGym-->
-    <table border="1">
-        <tr>
-            <th>Plan</th>
-            <th>Price</th>
-            <th>24/7 Access</th>
-            <th>Classes Included</th>
-        </tr>
-        <tr>
-            <td>Bronze</td>
-            <td>£22.99/month</td>
-            <td>&#10008</td> <!--Might change Crosses and Ticks for worded descriptions-->
-            <td>&#10008</td> <!-- Worded description will help user understand memberships-->
-        </tr>
-        <tr>
-            <td>Silver</td>
-            <td>£27.99/month</td>
-            <td>&#10008</td>
-            <td>&#10004</td> 
-        </tr>
-        <tr>
-            <td>Gold</td>
-            <td>£32.99/month</td>
-            <td>&#10004</td>
-            <td>&#10004</td> 
-        </tr>
-    </table>
-    <!--End of table-->
+    <section id="plans">
+        <h2>Choose Your Plan</h2>
 
-    <!--Short quiz to find what membership suits user-->
-    <p>Find which membership best suits you by taking our Membership Quiz!</p>
-    <button id="quizBtn">Take the Quiz!</button>
+        <div class="plans">
 
-    <div id="quizContainer" style="display:none; margin-top:20px;">
-        <h3>Membership Quiz</h3>
+            <article class="plan">
+                <h3>Bronze</h3>
+                <p>£22.99 per month</p>
+            </article>
 
-        <form id="quizForm">
-            <p>1. How often do you plan to visit the gym?</p>
-            <label><input type="radio" name="q1" value="Bronze"> 1–2 times per week</label><br>
-            <label><input type="radio" name="q1" value="Silver"> 3–4 times per week</label><br>
-            <label><input type="radio" name="q1" value="Gold"> 5+ times per week</label><br><br>
+            <article class="plan">
+                <h3>Silver</h3>
+                <p>£27.99 per month</p>
+            </article>
 
-            <p>2. What type of training do you prefer?</p>
-            <label><input type="radio" name="q2" value="Bronze"> Light workouts</label><br>
-            <label><input type="radio" name="q2" value="Silver"> Mixed cardio & strength</label><br>
-            <label><input type="radio" name="q2" value="Gold"> Intense training</label><br><br>
+            <article class="plan">
+                <h3>Gold</h3>
+                <p>£32.99 per month</p>
+            </article>
 
-            <p>3. Do you want access to premium classes?</p>
-            <label><input type="radio" name="q3" value="Bronze"> Not necessary</label><br>
-            <label><input type="radio" name="q3" value="Silver"> Sometimes</label><br>
-            <label><input type="radio" name="q3" value="Gold"> Absolutely</label><br><br>
+        </div>
+    </section>
 
-            <button type="button" id="submitQuiz">Submit Quiz</button>
+    <section id="signup">
+        <h2>Sign Up</h2>
+
+        <form class="signup-form">
+
+            <div class="form-group">
+                <label for="member-name">Name:</label><br><br>
+                <input type="text" id="member-name" name="name" required><br><br>
+            </div>
+
+            <div class="form-group">
+                <label for="member-email">Email:</label><br><br>
+                <input type="email" id="member-email" name="email" required><br><br>
+            </div>
+
+            <div class="form-group">
+                <label for="membership">Select Membership:</label><br><br>
+                <select id="membership" name="membership"><br><br>
+                    <option>Bronze</option>
+                    <option>Silver</option>
+                    <option>Gold</option>
+                </select><br><br>
+            </div>
+
+            <button type="submit">Join Now</button>
+
         </form>
+    </section>
 
-        <h3 id="quizResult" style="margin-top:20px;"></h3>
-    </div>
-    <!--End of quiz-->
-
-    <h2>Sign Up</h2>
-    <!--Added ids to name, email and membership-->
-    <form>
-        <label>Name:</label><br>
-        <input type="text" id="name"><br><br>
-
-        <label>Email:</label><br>
-        <input type="email" id="email"><br><br>
-
-        <label>Select Membership:</label><br>
-        <select id="tier">
-            <option>Bronze</option>
-            <option>Silver</option>
-            <option>Gold</option>
-        </select><br><br>
-
-        <input type="submit" value="Join Now">
-    </form>
-    
-    <!--Also added an id for a confirmation message. This will let the user know that form has been submitted or if any rows are empty-->
-    <p id="formMessage" style="margin-top:15px; font-weight:bold;"></p>
-    
 </main>
+
 
 <footer>
     <p>&copy; 2026 Elevate Gym</p>
 </footer>
-    
-<!--Used to calculate membership quiz results and give the user the best recommendation based on average score from answers-->
-<script>
-    document.getElementById("quizBtn").addEventListener("click", function() {
-        document.getElementById("quizContainer").style.display = "block";
-    });
-
-    document.getElementById("submitQuiz").addEventListener("click", function() {
-        const form = document.getElementById("quizForm");
-        const answers = ["q1", "q2", "q3"];
-        let scores = { Bronze: 0, Silver: 0, Gold: 0 };
-
-        answers.forEach(q => {
-            const selected = form.querySelector(`input[name="${q}"]:checked`);
-            if (selected) {
-                scores[selected.value]++;
-            }
-        });
-
-        let recommended = Object.keys(scores).reduce((a, b) =>
-            scores[a] > scores[b] ? a : b
-        );
-
-        document.getElementById("quizResult").textContent =
-            "Recommended Plan: " + recommended;
-    });
-</script>
-<!--End of score tally-->
-
-<!--Start of sign up form validation and handling-->
-<script>
-document.getElementById("signUpForm").addEventListener("submit", function(event) {
-    event.preventDefault(); 
-
-    const name = document.getElementById("name").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const membership = document.getElementById("tier").value;
-
-    if (name === "" || email === "") {
-        document.getElementById("formMessage").textContent =
-            "Please fill in all fields.";
-        document.getElementById("formMessage").style.color = "red";
-        return;
-    }
-
-    document.getElementById("formMessage").textContent =
-        `Thank you, ${name}! You signed up for the ${membership} plan.`;
-    document.getElementById("formMessage").style.color = "green";
-
-    document.getElementById("signUpForm").reset();
-});
-</script>
-<!--End of sign up form validation and handling-->
 
 </body>
 </html>

@@ -24,20 +24,37 @@
 </header>
 
 <main>
-    <h2>Get in Touch</h2>
+    <section id="contact">
+        <h2>Get in Touch</h2>
 
-    <form>
-        <label>Name:</label><br>
-        <input type="text"><br><br>
+        <form class="contact-form">
 
-        <label>Email:</label><br>
-        <input type="email"><br><br>
+            <div class="form-group">
+                <label for="name">Name:</label><br><br>
+                <input type="text" id="name" name="name" required><br><br>
+            </div>
 
-        <label>Message:</label><br>
-        <textarea></textarea><br><br>
+            <div class="form-group">
+                <label for="email">Email:</label><br><br>
+                <input type="email" id="email" name="email" required><br><br>
+            </div>
 
-        <input type="submit" value="Send Message">
-    </form>
+            <div class="form-group">
+                <label for="message">Message:</label><br><br>
+                <textarea id="message" name="message" required></textarea><br><br>
+            </div>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+    </section>
+
+    <section id="contact-info">
+        <h2>Our Contact Information</h2>
+        <p>Email: info@elevategym.com</p>
+        <p>Phone: 07434 569190</p>
+    </section>
+    
 </main>
 
 <footer>
