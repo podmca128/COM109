@@ -12,7 +12,9 @@
       <img src="images\Elevate_Gym_Logo.png" alt="Elevate Gym Logo" style="width: 150px; height: auto;">
     </a>
   </div>
-  
+    <!-- Dark Mode Button-->
+    <button onclick="darkMode()" style="margin-right: 1000px; font-size: 16px;">&#127765;</button> <!--Just need CSS to make it work-->
+
     <h1>Contact Us</h1>
     <nav>
         <a href="index.html">Home</a> |
@@ -64,6 +66,14 @@
 
     <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
     <script src="script.js"></script>
-    
+
+<!--Function for dark mode-->
+<script>
+    function darkMode() {
+        var darkMode = document.body;
+        darkMode.classList.toggle("dark-mode");
+    }
+</script>
+
 </body>
 </html>
