@@ -32,9 +32,9 @@ let day = new Date().getDay();
 
 if ((day >= 1 && day <= 5 && hour >= 8 && hour < 22) ||
     ((day === 0 || day === 6) && hour >= 8 && hour <20)) {
-    message = "Gym is open.";
+    message = "Gym Status: OPEN";
 } else {
-  message = "Gym is closed.";
+  message = "Gym Status: CLOSED";
 }
 
 document.getElementById("status").innerText = message;
