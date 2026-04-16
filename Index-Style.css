@@ -44,6 +44,9 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.88);
 }
 
 
@@ -172,4 +175,26 @@ footer {
     margin-top: 20px;
     font-size: 14px;
     color: #ccc;
+}
+
+#about-us {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+#about {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#find-us {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+#location {
+    text-align: center;
+    margin-bottom: 20px;
 }
