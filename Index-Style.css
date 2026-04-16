@@ -49,8 +49,6 @@ body {
     background-color: rgba(0,0,0,0.88);
 }
 
-
-
 .site-header {
     position: relative;
 }
@@ -197,4 +195,11 @@ footer {
 #location {
     text-align: center;
     margin-bottom: 20px;
+}
+
+#welcomeTitle {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 35px;
 }
