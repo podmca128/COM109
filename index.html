@@ -4,28 +4,23 @@
     <link rel="stylesheet" href="darkmode.css"> <!--Link to CSS darkmode-->
     <link rel="stylesheet" href="Index-Style.css"> <!--Link to CSS title-->
     <meta charset="UTF-8">
-    <title> Elevate Gym - Home</title>
+    <title>Elevate Gym - Home</title>
 </head>
 <body>
 
-<header class="site-header" style="text-align: center; padding: 20px;">
-  <div class="logo">
-    <img src="images\Elevate_Gym_Logo.png" alt="Elevate Gym Logo" style="width: 150px; height: auto;">
-  </div>
-    <!-- Dark Mode Button-->
-    <button onclick="darkMode()" style="margin-right: 1000px; font-size: 16px;">&#127765;</button> 
-    <h1>Elevate Gym</h1>
+<header class="site-header">    
     <nav>
-        <a href="index.html">Home</a> |
-        <a href="classes.html">Classes</a> |
-        <a href="trainers.html">Personal Trainers</a> |
-        <a href="membership.html">Membership</a> |
-        <a href="contact.html">Contact</a>
+        <a href="index.html" class="link-tabs">Home</a> 
+        <a href="classes.html" class="link-tabs">Classes</a> 
+        <a href="trainers.html" class="link-tabs">Personal Trainers</a> 
+        <a href="membership.html" class="link-tabs">Membership</a> 
+        <a href="contact.html" class="link-tabs">Contact</a>
     </nav>
 </header>
 
 <main>
-
+    <!-- Dark Mode Button-->
+    <button onclick="darkMode()" class="dark-mode-toggle">&#127765;</button>
     <section id="welcome">
         <h2>Welcome to Elevate Gym</h2>
         <p>
@@ -34,13 +29,13 @@
             Whether you're just starting your fitness journey or striving to reach new personal bests, Elevate Gym offers a supportive, high-energy environment designed to keep you motivated.
             Step inside, set your goals and elevate your performance — because here, there are no closing hours on progress.
         </p>
-        
-        <button onclick="window.location.href='classes.html';" style="font-size: 16px;">Explore Our Classes</button>
-        <button onclick="window.location.href='membership.html';" style="font-size: 16px;">Join Now</button>
-        
+
+        <button onclick="window.location.href='classes.html';" style="font-size: 16px;" class="front-page-button">Explore Our Classes</button>
+        <button onclick="window.location.href='membership.html';" style="font-size: 16px;" class="front-page-button">Join Now</button>
+   
     </section>
 
-    <section id="staff-hours">
+    <section id="staff-hours" class="schedule-card">
         <h2>Staffed Hours</h2>
         <ul class="staff-hour-list">
             <li>Monday: 8:00 AM – 10:00 PM</li>
@@ -52,7 +47,7 @@
             <li>Sunday: 8:00 AM – 8:00 PM</li>
         </ul>
         <!-- Displays Open/Closed Status -->
-        <p id="status" style="font-weight: bold; font-size: 1.2em;"></p>
+        <p id="status" class="gym-status"></p>
     </section>
 
     <section id="about">
@@ -85,8 +80,6 @@
 </main>
 
 <footer>
-    <p>&copy; 2026 Elevate Gym</p>   
-
     <address class="address">
         <h3>Our Address</h3>
         125-127 Main Street<br>
@@ -94,12 +87,13 @@
         BT76 0AA<br>
         United Kingdom
     </address>
-    
+
     <section id="contact-info">
-        <a id="contact-Info" href="contact.html">Our Contact Information</a>
+        <p id="contact-Info-Title">Our Contact Information</p>
         <p>Email: info@elevategym.com</p>
         <p>Phone: 07434 569190</p>
     </section>
+    <p id="copyright">&copy; 2026 Elevate Gym</p>
 </footer>
 <script src="script.js"></script>
 
