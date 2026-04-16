@@ -1,5 +1,78 @@
 .dark-mode {
-    background-color: #121212;
+    background-color: #111;
+    color: #f2f2f2;
+}
+
+.dark-mode .link-tabs {
+    background: #222;
+    border-color: #444;
+    color: #f2f2f2;
+}
+
+.dark-mode .link-tabs:hover {
+    background: #333;
+    box-shadow: 0 4px 8px rgba(255,255,255,0.1);
+}
+
+.dark-mode .site-header::before {
+    background: rgba(0,0,0,0.65);
+}
+
+* {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode-toggle {
+    background: #222;
+    border: 2px solid #555;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+}
+.dark-mode .dark-mode-toggle {
+    background: #fff;
+    color: #111;
+}
+
+.dark-mode-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #222;
+    color: white;
+    border: 2px solid #555;
+    padding: 10px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 9999; 
+}
+
+
+.dark-mode footer {
+    background-color: #222;  
+    color: #f2f2f2;          
+}
+
+
+.dark-mode #contact-Info-Title {
     color: #ffffff;
-} /*Need to fix. When enabled, unable to read text on table*/
-/*Also needs to stay enabled through changing pages*/
+}
+
+
+.dark-mode #copyright {
+    color: #aaa;              
+}
+
+
+.dark-mode .front-page-button {
+    background-color: #b30000;   
+    color: white;
+}
+
+.dark-mode footer {
+    box-shadow: 0 -4px 12px rgba(255,255,255,0.05);
+}
+
