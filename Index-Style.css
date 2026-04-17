@@ -33,6 +33,7 @@ body {
     background: #f7f7f7;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
+
 .link-tabs:hover {
     background-color: #e0e0e0;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -121,23 +122,6 @@ nav {
 .gym-status.closed {
     background: #b30000;
     color: white;
-}
-.dark-mode .schedule-card {
-    background: #1e1e1e;
-    color: #f2f2f2;
-    box-shadow: 0 4px 12px rgba(255,255,255,0.1);
-}
-
-.dark-mode .staff-hour-list li {
-    border-color: #444;
-}
-
-.dark-mode .gym-status.open {
-    background: #2ecc71;
-}
-
-.dark-mode .gym-status.closed {
-    background: #e74c3c;
 }
 
 #welcome {
