@@ -1,0 +1,91 @@
+body {
+    background-color: #f0f0f0; 
+    color: #333; 
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 20px;
+}
+
+.link-tabs {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 18px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #f7f7f7;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.link-tabs:hover {
+    background-color: #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.site-header {
+    background-image: url("Elevate_Gym_Logo.png");
+    background-size: 400px auto;   
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.88);
+}
+
+.site-header {
+    position: relative;
+}
+
+.site-header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4); 
+    z-index: 0;
+}
+
+.site-header * {
+    position: relative;
+    z-index: 1;
+}
+
+.site-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;   
+    align-items: center;         
+    padding-bottom: 20px;        
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+#copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+#welcomeTrainers {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.trainer {
+    text-align: center;
+    max-width: 800px;    
+    margin: 0 auto;       
+    padding: 20px;
+    margin-bottom: 20px;
+}
