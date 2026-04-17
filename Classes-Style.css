@@ -1,0 +1,169 @@
+main {
+    margin-top: 20px;
+}
+
+body {
+    background-color: #f0f0f0; 
+    color: #333; 
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.link-tabs {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 18px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #f7f7f7;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.link-tabs:hover {
+    background-color: #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.site-header {
+    background-image: url("Elevate_Gym_Logo.png");
+    background-size: 400px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 250px;
+    background-color: rgba(0,0,0,0.88);
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.site-header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4); 
+    z-index: 0;
+}
+
+.site-header * {
+    position: relative;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+}
+
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+#copyright {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+#ClassesTitle {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+#trainingTitle {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 23px;
+}
+
+.class-description {
+    text-align: center;
+    max-width: 800px;    
+    margin: 0 auto;       
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background: #8b0000;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f7f7f7;
+}
+
+tr:hover {
+    background-color: #fff3b0 !important;
+}
+
+td {
+    border-bottom: 1px solid #ddd;
+}
+
+.class-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.class-card img {
+    display: block;
+    margin: 15px auto 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.slidingBanner {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.yogaImage, .HypertrophyImage, .StrengthImage {
+    display: flex;
+    width: 300%; 
+    transition: transform 0.6s ease;
+}
+
+.yogaImage img, .HypertrophyImage img, .StrengthImage img {
+    width: 33.333%;
+}
