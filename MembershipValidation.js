@@ -51,9 +51,9 @@ function formValidate() {
     document.querySelector(".signup-form").reset();
 
 }
-
+ 
 document.querySelector(".signup-form").addEventListener("submit", function(e) {
-    e.preventDefault(); //Stops form reloading page on submit
+    e.preventDefault();
     formValidate();
 });
 
