@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="darkmode.css"> <!--Link to CSS darkmode-->
+    <link rel="stylesheet" href="membership-Style.css"> <!--Link to CSS for membership-->
+    <link rel="icon" type="image/png" href="Elevate_Gym_Logo.png"> <!--Favicon-->
     <!--Jquery to highlight rows for membership plan-->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
@@ -25,27 +27,20 @@
 <body>
 
 <header class="site-header" style="text-align: center; padding: 20px;">
-  <div class="logo" style="text-align: center;">
-    <a href="index.html">
-      <img src="images\Elevate_Gym_Logo.png" alt="Elevate Gym Logo" style="width: 150px; height: auto;">
-    </a>
-  </div>
-    <!-- Dark Mode Button-->
-    <button onclick="darkMode()" style="margin-right: 1000px; font-size: 16px;">&#127765;</button>
-    <h1>Membership Plans</h1>
     <nav>
-        <a href="index.html">Home</a> |
-        <a href="classes.html">Classes</a> |
-        <a href="trainers.html">Personal Trainers</a> |
-        <a href="membership.html">Membership</a> |
-        <a href="contact.html">Contact</a>
+        <a href="index.html" class="link-tabs">Home</a> 
+        <a href="classes.html" class="link-tabs">Classes</a> 
+        <a href="trainers.html" class="link-tabs">Personal Trainers</a> 
+        <a href="membership.html" class="link-tabs">Membership</a> 
+        <a href="contact.html" class="link-tabs">Contact</a>
     </nav>
 </header>
 
 <main>
-
+    <!-- Dark Mode Button-->
+    <button onclick="darkMode()" class="dark-mode-toggle">&#127765;</button>
     <section id="plans">
-        <h2>Choose Your Plan</h2>
+        <h2 id="Titles">Choose Your Plan</h2>
 
         <div class="plans">
 
@@ -79,7 +74,7 @@
             <!--End of table-->
 
             <!--Short quiz to find what membership suits user-->
-            <p>Find which membership best suits you by taking our Membership Quiz!</p>
+            <p id="quizText">Find which membership best suits you by taking our Membership Quiz!</p>
             <button id="quizBtn">Take the Quiz!</button>
 
             <div id="quizContainer" style="display:none; margin-top:20px;">
@@ -112,7 +107,7 @@
     </section>
 
     <section id="signup">
-        <h2>Sign Up</h2>
+        <h2 id="Titles">Sign Up</h2>
 
         <form class="signup-form">
 
@@ -126,7 +121,7 @@
                 <label for="member-email">Email:</label><br><br>
                 <input type="email" id="member-email" name="email"><br><br>
                 <span id="email-error" style="color:red;"></span>
-            </div>
+            </div> 
 
             <div class="form-group">
                 <label for="member-phone">Phone Number:</label><br><br>
@@ -153,7 +148,7 @@
 
 
 <footer>
-    <p>&copy; 2026 Elevate Gym</p>
+    <p id="copyright">&copy; 2026 Elevate Gym</p>
 </footer>
 
 <!--Used to calculate membership quiz results and give the user the best recommendation based on average score from answers-->
@@ -184,25 +179,6 @@
 </script>
 <!--End of score tally-->
 
-<!--Start of sign up form validation and handling-->
-<script>
-document.querySelector(".signup-form").addEventListener("submit", function(event) {
-    event.preventDefault(); 
-
-    const name = document.getElementById("member-name").value.trim();
-    const email = document.getElementById("member-email").value.trim();
-    const phone = document.getElementById("member-phone").value.trim();
-    const membership = document.getElementById("membership").value;
-
-    document.getElementById("formMessage").textContent =
-        `Thank you, ${name}! You signed up for the ${membership} plan.`;
-    document.getElementById("formMessage").style.color = "green";
-
-    document.querySelector(".signup-form").reset();
-});
-</script>
-<!--End of sign up form validation and handling-->
-
 <!--Function for dark mode-->
 <script>
     function darkMode() {
@@ -212,6 +188,6 @@ document.querySelector(".signup-form").addEventListener("submit", function(event
 </script>   
 
 <script src="MembershipValidation.js"></script> <!--Link to JS validation for membership form-->
-
+    
 </body>
 </html>
