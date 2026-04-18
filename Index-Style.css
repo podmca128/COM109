@@ -1,26 +1,27 @@
 body {
-    background-color: #f0f0f0; 
-    color: #333; 
-    font-family: Arial, sans-serif; 
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
 }
 
 .front-page-button {
-    background-color: #8b0000; 
+    background-color: #8b0000;
     border: none;
     color: white;
     padding: 15px 32px;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 8px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
 }
 
 .front-page-button:hover {
-    background-color: #a52a2a; 
+    background-color: #a52a2a;
 }
 
 .link-tabs {
@@ -39,26 +40,33 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-.site-header {
-    background-image: url("Elevate_Gym_Logo.png");
-    background-size: 400px auto;   
-    background-repeat: no-repeat;
-    background-position: center;
-    min-height: 250px;
+nav {
     display: flex;
-    flex-direction: column;
-    background-color: rgba(0,0,0,0.88);
+    gap: 10px;
 }
 
 .site-header {
+    background-image: url("Elevate_Gym_Logo.png");
+    background-size: 400px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0,0,0,0.88);
+    min-height: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
     position: relative;
+    padding-bottom: 20px;
 }
 
 .site-header::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0,0,0,0.4); 
+    background: rgba(0,0,0,0.4);
     z-index: 0;
 }
 
@@ -67,17 +75,18 @@ body {
     z-index: 1;
 }
 
-.site-header {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;   
-    align-items: center;         
-    padding-bottom: 20px;        
+#welcome {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    padding: 20px;
 }
 
-nav {
-    display: flex;
-    gap: 10px;
+#welcomeTitle {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 35px;
 }
 
 .schedule-card {
@@ -86,14 +95,16 @@ nav {
     border-radius: 12px;
     max-width: 350px;
     margin: 20px auto;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+
 .schedule-card h2 {
     border-bottom: 2px solid #ccc;
     padding-bottom: 8px;
     margin-bottom: 15px;
 }
+
 .staff-hour-list {
     list-style: none;
     padding: 0;
@@ -106,6 +117,7 @@ nav {
     padding: 6px 0;
     font-size: 16px;
 }
+
 .gym-status {
     margin-top: 15px;
     padding: 10px;
@@ -124,24 +136,6 @@ nav {
     color: white;
 }
 
-#welcome {
-    text-align: center;
-    max-width: 800px;    
-    margin: 0 auto;       
-    padding: 20px;
-    margin-bottom: 20px;
-}
-.front-page-button {
-    background-color: #8b0000;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    font-size: 16px;
-    margin: 10px;
-    cursor: pointer;
-    border-radius: 8px;
-}
-
 footer {
     padding: 20px;
     background-color: #333;
@@ -153,37 +147,17 @@ footer {
     font-size: 18px;
 }
 
+#location, #about, #about-us, #find-us {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#about-us, #find-us {
+    font-size: 28px;
+}
+
 #copyright {
     margin-top: 20px;
     font-size: 14px;
     color: #ccc;
-}
-
-#about-us {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 28px;
-}
-
-#about {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#find-us {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 28px;
-}
-
-#location {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-#welcomeTitle {
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 35px;
 }
