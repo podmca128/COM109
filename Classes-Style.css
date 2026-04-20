@@ -38,12 +38,12 @@ section {
 }
 
 .site-header {
-    background-image: url("Elevate_Gym_Logo.png"); /*for the image header*/
+    background-image: url("Elevate_Gym_Logo.png"); /*Sets logo as header background*/
     background-size: 400px auto;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-repeat: no-repeat; /*Stops logo repeating*/
+    background-position: center; /*Centres logo*/
     min-height: 250px;
-    background-color: rgba(0,0,0,0.88);
+    background-color: rgba(0,0,0,0.88); /*Adds background colour to header*/
 
     position: relative;
 
