@@ -126,7 +126,7 @@ th { /*Changes the colour of then background and text for the header of the clas
 }
 
 tr:nth-child(even) { /*Makes the yoga and strength training row slightly darker*/
-    background: #f7f7f7; /*Stops them from blending together*/
+    background: #f7f7f7 !important; /*Stops them from blending together*/
 }
 
 tr:hover { /*When user hovers over the row it changes the colour to yellow, helps user focus on the information in the highlighted row*/
@@ -134,7 +134,7 @@ tr:hover { /*When user hovers over the row it changes the colour to yellow, help
 }
 
 td { /*Changes colour of the row seperators*/
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ddd !important;
 }
 
 .class-card { /*Gives the class descriptions a white background*/
