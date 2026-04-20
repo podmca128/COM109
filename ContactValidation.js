@@ -28,6 +28,11 @@ function formValidate() {
         isValid = false; 
     }
 
+    if (phone.length !== 11) { /*If the phone number is not 11 digits long then an error is shown*/
+        phoneErr.textContent = "Phone number must be 11 digits long.";
+        isValid = false;
+    }
+
     if (email === "" || !email.includes("@") || !email.includes(".")) { /*If the email field is empty or does not contain an @ symbol or a dot then an error message will be shown*/
         emailErr.textContent = "Please enter a valid email address.";
         isValid = false;
