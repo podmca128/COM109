@@ -129,37 +129,37 @@
     color: #f2f2f2;
 }
 
-.dark-mode .contact-form { /*Changes the background and text color of the contact form in dark mode*/
+.dark-mode .contact-form { /*Changes the background and text colour of the contact form in dark mode*/
     background: #222;
     color: #fff;
     border: 1px solid #444;
 }
 
-.dark-mode .contact-form input, .dark-mode .contact-form textarea { /*Changes the background and text color of the contact form input boxes in dark mode*/
+.dark-mode .contact-form input, .dark-mode .contact-form textarea { /*Changes the background and text colour of the contact form input boxes in dark mode*/
     background: #333;
     border: 1px solid #555;
     color: #fff;
 }
 
-.dark-mode .signup-form { /*Changes the background and text color of the signup form in dark mode*/
+.dark-mode .signup-form { /*Changes the background and text colour of the signup form in dark mode*/
     background: #222;
     color: #fff;
     border: 1px solid #444;
 }
 
-.dark-mode .signup-form input, .dark-mode .signup-form textarea { /*Changes the background and text color of the signup form input boxes in dark mode*/
+.dark-mode .signup-form input, .dark-mode .signup-form textarea { /*Changes the background and text colour of the signup form input boxes in dark mode*/
     background: #333;
     border: 1px solid #555;
     color: #fff;
 }
 
-.dark-mode #quizForm { /*Changes the background and text color of the quiz form in dark mode*/
+.dark-mode #quizForm { /*Changes the background and text colour of the quiz form in dark mode*/
     background: #222;
     color: #fff;
     border: 1px solid #444;
 }
 
-.dark-mode #quizForm input, .dark-mode #quizForm textarea { /*Changes the background and text color of the quiz form input boxes in dark mode*/
+.dark-mode #quizForm input, .dark-mode #quizForm textarea { /*Changes the background and text colour of the quiz form input boxes in dark mode*/
     background: #333;
     border: 1px solid #555;
     color: #fff;
