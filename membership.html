@@ -27,7 +27,7 @@
 <body>
 
 <header class="site-header" style="text-align: center; padding: 20px;">
-    <nav>
+    <nav> <!--Links to help navigate between pages of the website-->
         <a href="index.html" class="link-tabs">Home</a> 
         <a href="classes.html" class="link-tabs">Classes</a> 
         <a href="trainers.html" class="link-tabs">Personal Trainers</a> 
@@ -55,14 +55,14 @@
                 <tr>
                     <td>Bronze</td>
                     <td>£22.99/month</td>
-                    <td>&#10008</td> <!--Might change Crosses and Ticks for worded descriptions-->
-                    <td>&#10008</td> <!-- Worded description will help user understand memberships-->
+                    <td>&#10008</td> <!--unicode for the crosses-->
+                    <td>&#10008</td> 
                 </tr>
                 <tr>
                     <td>Silver</td>
                     <td>£27.99/month</td>
                     <td>&#10008</td>
-                    <td>&#10004</td> 
+                    <td>&#10004</td> <!--unicode for the ticks-->
                 </tr>
                 <tr>
                     <td>Gold</td>
@@ -82,8 +82,8 @@
 
                 <form id="quizForm">
                     <p>1. How often do you plan to visit the gym?</p>
-                    <label><input type="radio" name="q1" value="Bronze"> 1–2 times per week</label><br>
-                    <label><input type="radio" name="q1" value="Silver"> 3–4 times per week</label><br>
+                    <label><input type="radio" name="q1" value="Bronze"> 1–2 times per week</label><br> <!--Each option allocates points to their respective tier-->
+                    <label><input type="radio" name="q1" value="Silver"> 3–4 times per week</label><br> 
                     <label><input type="radio" name="q1" value="Gold"> 5+ times per week</label><br><br>
 
                     <p>2. What type of training do you prefer?</p>
@@ -96,10 +96,10 @@
                     <label><input type="radio" name="q3" value="Silver"> Sometimes</label><br>
                     <label><input type="radio" name="q3" value="Gold"> Absolutely</label><br><br>
 
-                    <button type="button" id="submitQuiz">Submit Quiz</button>
-                </form>
+                    <button type="button" id="submitQuiz">Submit Quiz</button> <!--At the end this score is totaled up-->
+                </form>                                                        <!--The tier with the most points is printed-->
 
-                <h3 id="quizResult" style="margin-top:20px;"></h3>
+                <h3 id="quizResult" style="margin-top:20px;"></h3> <!--Prints the users result based on the quiz score-->
             </div>
             <!--End of quiz-->
             
@@ -109,12 +109,12 @@
     <section id="signup">
         <h2 id="Titles">Sign Up</h2>
 
-        <form class="signup-form">
+        <form class="signup-form"> <!--Sign up form-->
 
             <div class="form-group">
-                <label for="member-name">Name:</label><br><br>
-                <input type="text" id="member-name" name="name"><br><br>
-                <span id="name-error" style="color:red;"></span>
+                <label for="member-name">Name:</label><br><br> <!--Label for the input boxes-->
+                <input type="text" id="member-name" name="name"><br><br> <!--Input box-->
+                <span id="name-error" style="color:red;"></span> <!--Makes the error message red-->
             </div>
 
             <div class="form-group">
@@ -131,7 +131,7 @@
 
             <div class="form-group">
                 <label for="membership">Select Membership:</label><br><br>
-                <select id="membership" name="membership"><br><br>
+                <select id="membership" name="membership"><br><br> <!--Drop down menu for the user to choose their membership tier-->
                     <option>Bronze</option>
                     <option>Silver</option>
                     <option>Gold</option>
@@ -141,7 +141,7 @@
             <button type="submit">Join Now</button>
 
         </form>
-        <p id="formMessage" style="margin-top:15px; font-weight:bold;"></p>
+        <p id="formMessage" style="margin-top:15px; font-weight:bold;"></p> <!--Message to let user know their form was submitted-->
     </section>
 
 </main>
