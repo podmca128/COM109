@@ -1,28 +1,28 @@
-.dark-mode {
+.dark-mode { /*Sets the background of the website when darkmode is on*/
     background-color: #111;
     color: #f2f2f2;
 }
 
-.dark-mode .link-tabs {
+.dark-mode .link-tabs { /*Sets the colour of the link tabs when darkmode is on*/
     background: #222;
     border-color: #444;
     color: #f2f2f2;
 }
 
-.dark-mode .link-tabs:hover {
+.dark-mode .link-tabs:hover { /*Sets the colour of the link tabs when hovered over in darkmode*/
     background: #333;
     box-shadow: 0 4px 8px rgba(255,255,255,0.1);
 }
 
-.dark-mode .site-header::before {
+.dark-mode .site-header::before { 
     background: rgba(0,0,0,0.65);
 }
 
 * {
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease; /*Adds a smooth transition when changing into dark mode*/
 }
 
-.dark-mode-toggle {
+.dark-mode-toggle { /*Styles the dark mode toggle button*/
     background: #222;
     border: 2px solid #555;
     color: #fff;
@@ -30,14 +30,8 @@
     border-radius: 50%;
     cursor: pointer;
     font-size: 18px;
-}
-.dark-mode .dark-mode-toggle {
-    background: #fff;
-    color: #111;
-}
 
-.dark-mode-toggle {
-    position: fixed;
+    position: fixed; /*Sets the position of the dark mode toggle button*/
     top: 20px;
     right: 20px;
     background: #222;
@@ -49,122 +43,123 @@
     font-size: 18px;
     z-index: 9999; 
 }
+.dark-mode .dark-mode-toggle { /*Styles the dark mode toggle button when dark mode is on*/
+    background: #fff;
+    color: #111;
+}
 
-
-.dark-mode footer {
+.dark-mode footer { /*Changes the footer styles in dark mode*/
     background-color: #222;  
     color: #f2f2f2;          
 }
 
 
-.dark-mode #contact-Info-Title {
+.dark-mode #contact-Info-Title { /*Changes the colour of 'Get in Touch' in dark mode*/
     color: #ffffff;
 }
 
 
-.dark-mode #copyright {
+.dark-mode #copyright { /*Changes the colour of the copyright text in dark mode*/
     color: #aaa;              
 }
 
-
-.dark-mode .front-page-button {
+ 
+.dark-mode .front-page-button { /*Changes the colour of the front page button in dark mode*/
     background-color: #b30000;   
     color: white;
 }
 
-.dark-mode footer {
+.dark-mode footer { 
     box-shadow: 0 -4px 12px rgba(255,255,255,0.05);
 }
 
-.dark-mode .schedule-card {
+.dark-mode .schedule-card { /*Changes the styles of the class schedule in dark mode*/
     background: #1e1e1e;
     color: #f2f2f2;
     box-shadow: 0 4px 12px rgba(255,255,255,0.1);
 }
 
-.dark-mode .staff-hour-list li {
+.dark-mode .staff-hour-list li { /*Changes the border colour of the staff hour list in dark mode*/
     border-color: #444;
 }
 
-.dark-mode .gym-status.open {
+.dark-mode .gym-status.open { /*Changes the colour of the gym status in dark mode*/
     background: #2ecc71;
 }
 
-.dark-mode .gym-status.closed {
+.dark-mode .gym-status.closed { /*Changes the colour of the gym status in dark mode*/
     background: #e74c3c;
 }
 
-.dark-mode #welcomeTitle {
+.dark-mode #welcomeTitle {  /*Changes the colour of text in dark mode*/
     color: #f2f2f2;
 }
 
-.dark-mode #trainingTitle {
+.dark-mode #trainingTitle { /*Changes the colour of text in dark mode*/
     color: #f2f2f2;
 }
 
-.dark-mode #ClassesTitle {
+.dark-mode #ClassesTitle { /*Changes the colour of text in dark mode*/
     color: #f2f2f2;
 }
 
-.dark-mode .class-card {
+.dark-mode .class-card { /*Changes the text and background of the class list in dark mode*/
     background: #1e1e1e;
     color: #f2f2f2;
 }
 
-.dark-mode tr:nth-child(odd) {
-    background: #1e1e1e !important;
-    color: #f2f2f2;
+.dark-mode tr:nth-child(odd) { /*Makes the hypertrophy row have a slightly darker colour in dark mode*/
+    background: #1e1e1e !important; /*The !important is used to override any other background styles*/
+    color: #f2f2f2; /*the darker colour will help the different rows stick out more and stop them from blending in with each other*/
 }
 
-.dark-mode th {
+.dark-mode th { /*Sets the header colour in dark mode*/
     background: #b30000;
 }
 
-.dark-mode tr:nth-child(even) {
-    background: #2a2a2a !important;
+.dark-mode tr:nth-child(even) { /*Makes the strength and yoga rows have a slightly lighter colour in dark mode*/
+    background: #2a2a2a !important; /*the lighter colour will help the different rows stick out more and stop them from blending in with each other*/
 }
 
-.dark-mode tr:hover {
-    background-color: #444 !important;
+.dark-mode tr:hover { /*Adds a hover effect to the class schedule rows in dark mode*/
+    background-color: #444 !important; 
 }
 
-.dark-mode #welcomeTrainers {
+.dark-mode #welcomeTrainers { /*Changes text colour in dark mode*/
     color: #f2f2f2;
 }
 
-.dark-mode .contact-form {
+.dark-mode .contact-form { /*Changes the background and text color of the contact form in dark mode*/
     background: #222;
     color: #fff;
     border: 1px solid #444;
 }
 
-.dark-mode .contact-form input, .dark-mode .contact-form textarea {
+.dark-mode .contact-form input, .dark-mode .contact-form textarea { /*Changes the background and text color of the contact form input boxes in dark mode*/
     background: #333;
     border: 1px solid #555;
     color: #fff;
 }
 
-.dark-mode .signup-form {
+.dark-mode .signup-form { /*Changes the background and text color of the signup form in dark mode*/
     background: #222;
     color: #fff;
     border: 1px solid #444;
 }
 
-.dark-mode .signup-form input, 
-.dark-mode .signup-form textarea {
+.dark-mode .signup-form input, .dark-mode .signup-form textarea { /*Changes the background and text color of the signup form input boxes in dark mode*/
     background: #333;
     border: 1px solid #555;
     color: #fff;
 }
 
-.dark-mode #quizForm {
+.dark-mode #quizForm { /*Changes the background and text color of the quiz form in dark mode*/
     background: #222;
     color: #fff;
     border: 1px solid #444;
 }
 
-.dark-mode #quizForm input, 
-.dark-mode #quizForm textarea {
+.dark-mode #quizForm input, .dark-mode #quizForm textarea { /*Changes the background and text color of the quiz form input boxes in dark mode*/
     background: #333;
     border: 1px solid #555;
     color: #fff;
