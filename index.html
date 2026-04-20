@@ -10,7 +10,7 @@
 <body>
 
 <header class="site-header">    
-    <nav>
+    <nav> <!--Links to help navigate between pages of the website-->
         <a href="index.html" class="link-tabs">Home</a> 
         <a href="classes.html" class="link-tabs">Classes</a> 
         <a href="trainers.html" class="link-tabs">Personal Trainers</a> 
@@ -30,7 +30,7 @@
             Whether you're just starting your fitness journey or striving to reach new personal bests, Elevate Gym offers a supportive, high-energy environment designed to keep you motivated.
             Step inside, set your goals and elevate your performance — because here, there are no closing hours on progress.
         </p>
-
+        <!--Buttons that send the user to the classes/membership pages-->
         <button onclick="window.location.href='classes.html';" style="font-size: 16px;" class="front-page-button">Explore Our Classes</button>
         <button onclick="window.location.href='membership.html';" style="font-size: 16px;" class="front-page-button">Join Now</button>
    
@@ -61,8 +61,7 @@
         </p>
     </section>
 
-    
-
+    <!--Uses google maps to show where the gym is-->
     <section id="location">
         <h2 id="find-us">Find Us</h2>
 
@@ -89,13 +88,14 @@
     </address>
 
     <section id="contact-info">
+        <!--Links to quickly contact the number/email-->
         <h3 id="contact-Info-Title">Our Contact Information</h3>
-        Email: info@elevategym.com<br>
-        Phone: 07434 569190
+        Email: <a href="mailto: info@elevategym.com">info@elevategym.com</a><br>
+        Phone: <a href="tel: 07434 569190">07434 569190</a> 
     </section>
     <p id="copyright">&copy; 2026 Elevate Gym</p>
 </footer>
-<script src="script.js"></script>
+<script src="script.js"></script> <!--JavaScript for open/close status-->
 
 <!--Function for dark mode-->
 <script>
