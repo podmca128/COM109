@@ -194,7 +194,7 @@ th { /*Sets table header colour*/
 }
 
 tr:nth-child(even) { /*Sets the colour of every other row in the table to make it easier to read*/
-    background: #f7f7f7;
+    background: #f7f7f7 !important;
 }
 
 tr:hover { /*Changes the colour of the row when user hovers over it*/
