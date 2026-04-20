@@ -2,7 +2,7 @@ main {
     margin-top: 20px;
 }
 
-body {
+body {  /*Changes the background colour of page and colour of text. Also changes the font type*/
     background-color: #f0f0f0; 
     color: #333; 
     font-family: Arial, sans-serif; 
@@ -22,7 +22,7 @@ section {
     padding: 20px;
 }
 
-.link-tabs {
+.link-tabs { /*Puts the links to pages in a button*/
     color: #333;
     text-decoration: none;
     padding: 10px 18px;
@@ -32,13 +32,13 @@ section {
     background: #f7f7f7;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
-.link-tabs:hover {
+.link-tabs:hover { /*Changes the colour of these buttons when user hovers overs them*/
     background-color: #e0e0e0;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 .site-header {
-    background-image: url("Elevate_Gym_Logo.png");
+    background-image: url("Elevate_Gym_Logo.png"); /*for the image header*/
     background-size: 400px auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -67,38 +67,38 @@ section {
     z-index: 1;
 }
 
-nav {
+nav { /*Positioning of the page link buttons*/
     display: flex;
     gap: 10px;
 }
 
-footer {
+footer { /*makes the footer a different colour, makes it more easy to seperate from rest of page*/
     padding: 20px;
     background-color: #333;
     color: white;
 }
 
-#copyright {
+#copyright { /*Changes copyright colour and text size*/
     margin-top: 20px;
     font-size: 14px;
     color: #ccc;
 }
 
-#ClassesTitle {
+#ClassesTitle { /*Centres and changes text size of 'Our Classes' and 'Class Schedule'*/
     color: #333;
     text-align: center;
     margin-bottom: 20px;
     font-size: 35px;
 }
 
-#trainingTitle {
+#trainingTitle { /*Centres and changes the titles for the classes*/
     color: #333;
     text-align: center;
     margin-bottom: 20px;
     font-size: 23px;
 }
 
-.class-description {
+.class-description { /*Centres the descriptions of the classes*/
     text-align: center;
     max-width: 800px;    
     margin: 0 auto;       
@@ -106,38 +106,38 @@ footer {
     margin-bottom: 20px;
 }
 
-table {
+table { /*for the classes table*/
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-    background: white;
+    background: white; /*background colour for the classes table*/
     border-radius: 10px;
-    overflow: hidden;
+    overflow: hidden; /*Hides any overflow text*/
 }
 
-th, td {
+th, td { /*centres the text in the header and columns*/
     padding: 12px;
     text-align: center;
 }
 
-th {
+th { /*Changes the colour of then background and text for the header of the class schedule*/
     background: #8b0000;
     color: white;
 }
 
-tr:nth-child(even) {
-    background: #f7f7f7;
+tr:nth-child(even) { /*Makes the yoga and strength training row slightly darker*/
+    background: #f7f7f7; /*Stops them from blending together*/
 }
 
-tr:hover {
+tr:hover { /*When user hovers over the row it changes the colour to yellow, helps user focus on the information in the highlighted row*/
     background-color: #fff3b0 !important;
 }
 
-td {
+td { /*Changes colour of the row seperators*/
     border-bottom: 1px solid #ddd;
 }
 
-.class-card {
+.class-card { /*Gives the class descriptions a white background*/
     background: white;
     padding: 20px;
     border-radius: 12px;
@@ -145,25 +145,25 @@ td {
     box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.class-card img {
+.class-card img { /*For the banner images*/
     display: block;
     margin: 15px auto 0 auto;
     max-width: 100%;
-    height: auto;
+    height: auto; /*Scales to fit the screen so image isnt squished*/
 }
 
-.slidingBanner {
+.slidingBanner { 
     width: 100%;
-    overflow: hidden;
+    overflow: hidden; /*Hides any overflow from the images*/
     position: relative;
 }
 
-.yogaImage, .HypertrophyImage, .StrengthImage {
+.yogaImage, .HypertrophyImage, .StrengthImage { /*For the images in each class section*/
     display: flex;
     width: 300%; 
     transition: transform 0.6s ease;
 }
 
-.yogaImage img, .HypertrophyImage img, .StrengthImage img {
+.yogaImage img, .HypertrophyImage img, .StrengthImage img { /*Sets the images width in the slides*/
     width: 33.333%;
 }
