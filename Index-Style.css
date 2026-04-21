@@ -161,3 +161,7 @@ footer { /*Styles the footer of the page*/
     font-size: 14px;
     color: #ccc;
 }
+.social-icon { /*Styles the social media icons in the footer*/
+    width: 20px;
+    height: 20px;
+}
