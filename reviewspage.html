@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elevate Gym Reviews</title>
+
+<style>
+
+/* ===== GLOBAL ===== */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0b0b0b;
+    color: white;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* ===== NAVBAR ===== */
+nav {
+    background: black;
+    border-bottom: 2px solid #e50914;
+}
+
+nav .nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+/* LOGO */
+.logo img {
+    height: 70px;
+}
+
+/* MENU */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #e50914;
+}
+
+/* ===== HERO ===== */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(180deg,#111,#000);
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #ffffff;
+}
+
+.hero p {
+    color: #ccc;
+}
+
+/* ===== REVIEWS ===== */
+.reviews {
+    padding: 60px 0;
+}
+
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 30px;
+}
+
+.review-card {
+    background: #141414;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #222;
+    transition: 0.3s;
+}
+
+.review-card:hover {
+    transform: translateY(-8px);
+    border-color: #e50914;
+    box-shadow: 0 0 20px rgba(229,9,20,0.4);
+}
+
+.stars {
+    color: #e50914;
+    font-size: 20px;
+}
+
+.review-text {
+    margin: 15px 0;
+    color: #ddd;
+    font-style: italic;
+}
+
+.reviewer {
+    font-weight: bold;
+    color: #fff;
+}
+
+/* ===== CTA ===== */
+.cta {
+    text-align: center;
+    padding: 70px 20px;
+    background: black;
+    border-top: 2px solid #e50914;
+}
+
+.cta h2 {
+    color: #fff;
+}
+
+.cta a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 30px;
+    background: #e50914;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cta a:hover {
+    background: #ff1e2d;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background: #050505;
+    text-align: center;
+    padding: 25px;
+    color: #777;
+}
+
+/* ===== MOBILE ===== */
+@media(max-width:700px){
+
+.nav-wrapper{
+flex-direction: column;
+gap: 15px;
+}
+
+.hero h1{
+font-size:32px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+<div class="container nav-wrapper">
+
+<div class="logo">
+<img src="logo.png" alt="Elevate Gym Logo">
+</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Membership</a></li>
+<li><a href="#">Reviews</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<h1>Member Transformations & Reviews</h1>
+<p>See why athletes choose Elevate Gym.</p>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews">
+<div class="container">
+
+<div class="review-grid">
+
+<div class="review-card">
+<div class="stars">★★★★★</div>
+<p class="review-text">
+"The best gym atmosphere I've ever trained in. Motivation everywhere!"
+</p>
+<p class="reviewer">— Jake M.</p>
+</div>
+
+<div class="review-card">
+<div class="stars">★★★★★</div>
+<p class="review-text">
+"Top equipment, amazing coaches, and real results."
+</p>
+<p class="reviewer">— Sarah L.</p>
+</div>
+
+<div class="review-card">
+<div class="stars">★★★★★</div>
+<p class="review-text">
+"I gained strength and confidence within months."
+</p>
+<p class="reviewer">— Daniel R.</p>
+</div>
+
+<div class="review-card">
+<div class="stars">★★★★☆</div>
+<p class="review-text">
+"Friendly members and serious training environment."
+</p>
+<p class="reviewer">— Emma K.</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+<h2>Ready to Elevate Your Training?</h2>
+<p>Join Elevate Gym today.</p>
+<a href="#">Join Now</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 Elevate Gym | Train Hard. Elevate Higher.</p>
+</footer>
+
+</body>
+</html>
