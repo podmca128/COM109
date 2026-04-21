@@ -72,6 +72,22 @@ footer {  /*makes the footer a different colour, makes it more easy to seperate 
     color: #ccc;
 }
 
+<p id="social-media">
+        Follow us on<br>
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="FacebookLogo.png" alt="Facebook Icon" class="social-icon">
+        </a>
+        <a href="https://www.tiktok.com" target="_blank">
+            <img src="TikTokLogo.png" alt="TikTok Icon" class="social-icon">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="InstagramLogo.png" alt="Instagram Icon" class="social-icon">
+        </a>
+        <a href="https://x.com" target="_blank">
+            <img src="XLogo.png" alt="X Icon" class="social-icon">
+        </a>
+    </p>
+
 .contact-form input, .contact-form textarea {
     width: 95%; /*Sets width of the input boxes*/
     padding: 12px 15px;
