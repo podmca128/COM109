@@ -134,3 +134,13 @@ nav a {
 nav a:hover {
     color: #e50914;
 }
+
+.social-icon { /*Styles the social media icons in the footer*/
+    width: 20px;
+    height: 20px;
+}
+
+#social-media { /*Styles the social media text*/
+    font-weight: bold;
+    font-size: 18px;
+ }
