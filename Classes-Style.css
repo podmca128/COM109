@@ -167,3 +167,20 @@ td { /*Changes colour of the row seperators*/
 .yogaImage img, .HypertrophyImage img, .StrengthImage img { /*Sets the images width in the slides*/
     width: 33.333%;
 }
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #e50914;
+}
