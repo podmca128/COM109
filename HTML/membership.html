@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="darkmode.css"> <!--Link to CSS darkmode-->
+    <link rel="stylesheet" href="membership-Style.css"> <!--Link to CSS for membership-->
+    <link rel="icon" type="image/png" href="Elevate_Gym_Logo.png"> <!--Favicon-->
+    <!--Jquery to highlight rows for membership plan-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $("tr").hover(
+                function() {
+                    $(this).css("background-color", "yellow");
+                },
+                function() {
+                    $(this).css("background-color", "white");
+                }
+            );
+        });
+    </script>
+    <!--End of JQuery-->
+    
+    <meta charset="UTF-8">
+    <title>Membership</title>
+</head>
+<body>
+
+<header class="site-header" style="text-align: center; padding: 20px;">
+    <nav> <!--Links to help navigate between pages of the website-->
+        <a href="index.html" class="link-tabs">Home</a> 
+        <a href="classes.html" class="link-tabs">Classes</a> 
+        <a href="trainers.html" class="link-tabs">Personal Trainers</a> 
+        <a href="membership.html" class="link-tabs">Membership</a> 
+        <a href="reviewpage.html" class="link-tabs">Reviews</a>
+        <a href="contact.html" class="link-tabs">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <!-- Dark Mode Button-->
+    <button onclick="darkMode()" class="dark-mode-toggle">&#127765;</button>
+    <section id="plans">
+        <h2 id="Titles">Choose Your Plan</h2>
+
+        <div class="plans">
+
+            <!--Table to compare plans-->
+            <table border="1">
+                <tr>
+                    <th>Plan</th>
+                    <th>Price</th>
+                    <th>24/7 Access</th>
+                    <th>Classes Included</th>
+                </tr>
+                <tr>
+                    <td>Bronze</td>
+                    <td>£22.99/month</td>
+                    <td>&#10008</td> <!--unicode for the crosses-->
+                    <td>&#10008</td> 
+                </tr>
+                <tr>
+                    <td>Silver</td>
+                    <td>£27.99/month</td>
+                    <td>&#10008</td>
+                    <td>&#10004</td> <!--unicode for the ticks-->
+                </tr>
+                <tr>
+                    <td>Gold</td>
+                    <td>£32.99/month</td>
+                    <td>&#10004</td>
+                    <td>&#10004</td> 
+                </tr>
+            </table>
+            <!--End of table-->
+
+            <!--Short quiz to find what membership suits user-->
+            <p id="quizText">Find which membership best suits you by taking our Membership Quiz!</p>
+            <button id="quizBtn">Take the Quiz!</button>
+
+            <div id="quizContainer" style="display:none; margin-top:20px;">
+                <h3>Membership Quiz</h3>
+
+                <form id="quizForm">
+                    <p>1. How often do you plan to visit the gym?</p>
+                    <label><input type="radio" name="q1" value="Bronze"> 1–2 times per week</label><br> <!--Each option allocates points to their respective tier-->
+                    <label><input type="radio" name="q1" value="Silver"> 3–4 times per week</label><br> 
+                    <label><input type="radio" name="q1" value="Gold"> 5+ times per week</label><br><br>
+
+                    <p>2. What type of training do you prefer?</p>
+                    <label><input type="radio" name="q2" value="Bronze"> Light workouts</label><br>
+                    <label><input type="radio" name="q2" value="Silver"> Mixed cardio & strength</label><br>
+                    <label><input type="radio" name="q2" value="Gold"> Intense training</label><br><br>
+
+                    <p>3. Do you want access to premium classes?</p>
+                    <label><input type="radio" name="q3" value="Bronze"> Not necessary</label><br>
+                    <label><input type="radio" name="q3" value="Silver"> Sometimes</label><br>
+                    <label><input type="radio" name="q3" value="Gold"> Absolutely</label><br><br>
+
+                    <button type="button" id="submitQuiz">Submit Quiz</button> <!--At the end this score is totaled up-->
+                </form>                                                        <!--The tier with the most points is printed-->
+
+                <h3 id="quizResult" style="margin-top:20px;"></h3> <!--Prints the users result based on the quiz score-->
+            </div>
+            <!--End of quiz-->
+            
+        </div>
+    </section>
+
+    <section id="signup">
+        <h2 id="Titles">Sign Up</h2>
+
+        <form class="signup-form"> <!--Sign up form-->
+
+            <div class="form-group">
+                <label for="member-name">Name:</label><br><br> <!--Label for the input boxes-->
+                <input type="text" id="member-name" name="name"><br><br> <!--Input box-->
+                <span id="name-error" style="color:red;"></span> <!--Makes the error message red-->
+            </div>
+
+            <div class="form-group">
+                <label for="member-email">Email:</label><br><br>
+                <input type="email" id="member-email" name="email"><br><br>
+                <span id="email-error" style="color:red;"></span>
+            </div> 
+
+            <div class="form-group">
+                <label for="member-phone">Phone Number:</label><br><br>
+                <input type="tel" id="member-phone" name="phone"><br><br>
+                <span id="phone-error" style="color:red;"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="membership">Select Membership:</label><br><br>
+                <select id="membership" name="membership"><br><br> <!--Drop down menu for the user to choose their membership tier-->
+                    <option>Bronze</option>
+                    <option>Silver</option>
+                    <option>Gold</option>
+                </select><br><br>
+            </div>
+
+            <button type="submit">Join Now</button>
+            <p id="formMessage" style="margin-top:15px; font-weight:bold;"></p> <!--Message to let user know their form was submitted-->
+        </form>
+    </section>
+
+</main>
+
+
+<footer>
+    <p id="copyright">&copy; 2026 Elevate Gym</p>
+</footer>
+
+<!--Used to calculate membership quiz results and give the user the best recommendation based on average score from answers-->
+<script>
+    document.getElementById("quizBtn").addEventListener("click", function() {
+        document.getElementById("quizContainer").style.display = "block";
+    });
+
+    document.getElementById("submitQuiz").addEventListener("click", function() {
+        const form = document.getElementById("quizForm");
+        const answers = ["q1", "q2", "q3"];
+        let scores = { Bronze: 0, Silver: 0, Gold: 0 };
+
+        answers.forEach(q => {
+            const selected = form.querySelector(`input[name="${q}"]:checked`);
+            if (selected) {
+                scores[selected.value]++;
+            }
+        });
+
+        let recommended = Object.keys(scores).reduce((a, b) =>
+            scores[a] > scores[b] ? a : b
+        );
+
+        document.getElementById("quizResult").textContent =
+            "Recommended Plan: " + recommended;
+    });
+</script>
+<!--End of score tally-->
+
+<!--Function for dark mode-->
+<script>
+    function darkMode() {
+        var darkMode = document.body;
+        darkMode.classList.toggle("dark-mode");
+    }
+</script>   
+
+<script src="MembershipValidation.js"></script> <!--Link to JS validation for membership form-->
+    
+</body>
+</html>
