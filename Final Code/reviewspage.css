@@ -1,0 +1,216 @@
+body { /*Adds background colour and text fonts to the page*/
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.link-tabs { /*Adds colour and boxes to the link tabs*/
+    color: #333;
+    text-decoration: none;
+    padding: 10px 18px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: #f7f7f7;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.link-tabs:hover { /*Changes the colour of the link tabs when hovered over*/
+    background-color: #e0e0e0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.site-header {
+    background-image: url("Elevate_Gym_Logo.png"); /*Sets the background image for the site header*/
+    background-size: 400px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0,0,0,0.88);
+    min-height: 250px;
+
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.site-header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 0;
+}
+
+.site-header * {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* ===== CONTAINER ===== */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+nav { /*Positions the navigation links*/
+    display: flex;
+    gap: 10px;
+}
+
+.nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.logo img {
+    height: 70px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #e50914;
+}
+
+/* ===== HERO ===== */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(180deg,#111, #333333);
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #ccc;
+}
+
+.hero p {
+    color: #ccc;
+}
+/* ===== REVIEWS ===== */
+.reviews {
+    padding: 60px 0;
+}
+
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 30px;
+}
+
+.review-card {
+    background: #303030;
+    color: #f2f2f2;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #222;
+    transition: 0.3s;
+}
+
+.review-card:hover {
+    transform: translateY(-8px);
+    border-color: #e50914;
+    box-shadow: 0 0 20px rgba(229,9,20,0.4);
+}
+
+.stars {
+    color: #e50914;
+    font-size: 20px;
+}
+
+.review-text {
+    margin: 15px 0;
+    color: #ddd;
+    font-style: italic;
+}
+
+.reviewer {
+    font-weight: bold;
+}
+
+/* ===== CTA ===== */
+.cta {
+    text-align: center;
+    padding: 70px 20px;
+    background: linear-gradient(180deg,#111, #333);
+    border-top: 2px solid #e50914;
+}
+
+.cta h2 {
+    font-size: 36px;
+    color: white;
+}
+
+.cta p {
+    color: #ddd;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.cta a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 30px;
+    background: #e50914;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cta a:hover {
+    background: #ff1e2d;
+}
+
+footer { /*Styles the footer of the page*/
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.social-icon { /*Styles the social media icons in the footer*/
+    width: 20px;
+    height: 20px;
+}
+
+#social-media { /*Styles the social media text*/
+    font-weight: bold;
+    font-size: 18px;
+}
+/* ===== MOBILE ===== */
+@media(max-width:700px){
+
+.nav-wrapper{
+flex-direction: column;
+gap: 15px;
+}
+
+.hero h1{
+font-size:32px;
+color: #ccc;
+}
+
+}
+

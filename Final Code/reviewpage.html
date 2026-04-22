@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elevate Gym Reviews</title>
+
+<!-- LINK TO CSS -->
+<link rel="stylesheet" href="reviewspage.css">
+<link rel="stylesheet" href="darkmode.css"> <!--Link to CSS darkmode-->
+<link rel="icon" type="image/png" href="Elevate_Gym_Logo.png"> <!--Favicon-->
+
+
+</head>
+
+<body>
+<header class="site-header">    
+    <nav> <!--Links to help navigate between pages of the website-->
+        <a href="index.html" class="link-tabs">Home</a> 
+        <a href="classes.html" class="link-tabs">Classes</a> 
+        <a href="trainers.html" class="link-tabs">Personal Trainers</a> 
+        <a href="membership.html" class="link-tabs">Membership</a> 
+        <a href="reviewpage.html" class="link-tabs">Reviews</a>
+        <a href="contact.html" class="link-tabs">Contact</a>
+    </nav>
+</header>
+
+<!-- Dark Mode Button-->
+<button onclick="darkMode()" class="dark-mode-toggle">&#127765;</button>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Member Transformations & Reviews</h1>
+    <p>See why athletes choose Elevate Gym.</p>
+</section>
+
+<!-- REVIEWS -->
+<section class="reviews">
+<div class="container">
+
+<div class="review-grid">
+
+<div class="review-card">
+<div class="stars">★★★★★</div>
+<p class="review-text">
+"The best gym atmosphere I've ever trained in. Motivation everywhere!"
+</p>
+<p class="reviewer">— Jake M.</p>
+</div>
+
+<div class="review-card">
+<div class="stars">★★★★★</div>
+<p class="review-text">
+"Top equipment, amazing coaches, and real results."
+</p>
+<p class="reviewer">— Sarah L.</p>
+</div>
+
+<div class="review-card">
+<div class="stars">★★★★★</div>
+<p class="review-text">
+"I gained strength and confidence within months."
+</p>
+<p class="reviewer">— Daniel R.</p>
+</div>
+
+<div class="review-card">
+<div class="stars">★★★★☆</div>
+<p class="review-text">
+"Friendly members and serious training environment."
+</p>
+<p class="reviewer">— Emma K.</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+<h2>Ready to Elevate Your Training?</h2>
+<p>Join Elevate Gym today.</p>
+<a href="membership.html">Join Now</a>
+</section>
+
+<footer>
+    <address class="address">
+        <h3>Our Address</h3>
+        125-127 Main Street<br>
+        Clogher<br>
+        BT76 0AA<br>
+        United Kingdom
+    </address>
+
+    <section id="contact-info">
+        <!--Links to quickly contact the number/email-->
+        <h3 id="contact-Info-Title">Our Contact Information</h3>
+        Email: <a href="mailto: info@elevategym.com">info@elevategym.com</a><br>
+        Phone: <a href="tel: 07434 569190">07434 569190</a> 
+    </section>
+    <p id="social-media">
+        Follow us on<br>
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="FacebookLogo.png" alt="Facebook Icon" class="social-icon">
+        </a>
+        <a href="https://www.tiktok.com" target="_blank">
+            <img src="TikTokLogo.png" alt="TikTok Icon" class="social-icon">
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="InstagramLogo.png" alt="Instagram Icon" class="social-icon">
+        </a>
+        <a href="https://x.com" target="_blank">
+            <img src="XLogo.png" alt="X Icon" class="social-icon">
+        </a>
+    </p>
+    <p id="copyright">&copy; 2026 Elevate Gym | Train Hard. Elevate Higher.</p>
+</footer>
+
+<!--Function for dark mode-->
+<script>
+    // Apply darkmode on load
+    document.addEventListener("DOMContentLoaded", function () {
+
+        const toggleBtn = document.querySelector(".dark-mode-toggle");
+
+        // Load darkmode
+        if (localStorage.getItem("theme") === "dark") {
+            document.body.classList.add("dark-mode");
+            toggleBtn.textContent = "☀️"; // Sun icon
+        }
+
+        // Toggle function
+        window.darkMode = function () {
+            document.body.classList.toggle("dark-mode");
+
+            const isDark = document.body.classList.contains("dark-mode");
+            toggleBtn.textContent = isDark ? "☀️" : "🌕"; // Moon or sun icon
+
+            localStorage.setItem("theme", isDark ? "dark" : "light");
+        };
+    });
+</script>
+
+</body>
+</html>
